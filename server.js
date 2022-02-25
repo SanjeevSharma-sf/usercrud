@@ -3,6 +3,7 @@ const dotenv = require("dotenv");
 const morgan = require("morgan");
 const bodyparser = require("body-parser");
 const path = require("path");
+const connectDatabase = require("./server/database/db");
 //config
 dotenv.config({ path: "server/config/config.env" });
 
@@ -21,10 +22,10 @@ app.set("view engine", "ejs");
 // app.use("/img", express.static(path.resolve(__dirname, "assets/img")));
 // app.use("/js", express.static(path.resolve(__dirname, "assets/js")));
 
-app.get("/", (req, res) => {
-  res.render("index");
-});
 
+
+//connecting to database
+connectDatabase();
 app.listen(process.env.PORT, () => {
   console.log(`Server is working on http://localhost:${process.env.PORT}`);
 });

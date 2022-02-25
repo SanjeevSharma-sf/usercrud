@@ -1,0 +1,20 @@
+<%for(let i = 0;i<users.length;i++){%>
+<tr>
+    <th scope="row"><%=i+1%></th>
+    <td><%=users[i].name%></td>
+    <td><%=users[i].email%></td>
+    <td><%=users[i].gender%></td>
+    <td><%=users[i].status%></td>
+    <td>
+        <a class="btn btn-primary" data-bs-toggle="offcanvas" href="/update-user" role="button" aria-controls="offcanvasExample">
+            Edit
+        </a>
+        <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#" role="button" aria-controls="offcanvasExample">
+            Delete
+        </a>
+    </td>
+
+  </tr>
+  
+
+<%}%>

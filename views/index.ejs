@@ -2,6 +2,31 @@
 <%- include("include/_header")%>
 <!-- /include header -->
 
+<!-- Main Site -->
+<div class="container">
+    <a href="/add-user">New User</a>
+    <!-- form handling -->
+    <form action="/" method = "POST">
+        <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Gender</th>
+                <th scope="col">Status</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <%-include("include/_show")%>
+            </tbody>
+          </table>
+    </form>
+    
+    <!-- /form handling -->
+</div>
+<!-- /Main Site -->
 <!-- include footer -->
 <%- include("include/_footer")%>
 <!-- /include footer -->

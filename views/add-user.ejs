@@ -1,0 +1,49 @@
+<!-- include header -->
+<%- include("include/_header")%>
+<!-- /include header -->
+
+<!-- Main section -->
+<Header>
+    <nav>
+        <div class="container">
+            <div class="text-center">
+                <a href="/" class "nav-brand text-dark"> User Management System</a>
+            </div>
+        </div>
+    </nav>
+</Header> 
+
+<!-- Add New User Site -->
+
+<section class = "main_heading my-5 pt-5">
+  <div class="text-center">
+    <!-- Breadcrumb -->
+    <div class="col-xxl-8 col-10 col-md-8 mx-auto">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active" aria-current="page"><a href="/">All Users</a></li>
+        </ol>
+      </nav>
+    </div>
+    <!-- /Breadcrumb -->
+    <h1 class="display-4">Register New User</h1>
+    <!-- <hr class= "w-25 mx-auto"/> -->
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xxl-8 col-10 col-md-8 mx-auto">
+        <%- include("include/_form")%>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Add New User Site -->
+<!-- /Main section -->
+
+
+
+
+
+<!-- include footer -->
+<%- include("include/_footer")%>
+<!-- /include footer -->
