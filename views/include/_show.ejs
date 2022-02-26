@@ -6,10 +6,10 @@
     <td><%=users[i].gender%></td>
     <td><%=users[i].status%></td>
     <td>
-        <a class="btn btn-primary" data-bs-toggle="offcanvas" href="/update-user" role="button" aria-controls="offcanvasExample">
+        <a class="btn btn-primary" data-bs-toggle="offcanvas" href="/update-user?id=<%=users[i]._id%>" role="button" aria-controls="offcanvasExample">
             Edit
         </a>
-        <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#" role="button" aria-controls="offcanvasExample">
+<a class="btn btn-primary deletebtn" data-bs-toggle="offcanvas"  data_id = "<%=users[i]._id%>" role="button" aria-controls="offcanvasExample">
             Delete
         </a>
     </td>
@@ -18,3 +18,4 @@
   
 
 <%}%>
+

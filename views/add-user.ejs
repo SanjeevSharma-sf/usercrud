@@ -3,7 +3,7 @@
 <!-- /include header -->
 
 <!-- Main section -->
-<Header>
+<!-- <Header>
     <nav>
         <div class="container">
             <div class="text-center">
@@ -11,7 +11,7 @@
             </div>
         </div>
     </nav>
-</Header> 
+</Header>  -->
 
 <!-- Add New User Site -->
 
@@ -41,7 +41,13 @@
 <!-- /Main section -->
 
 
-
+<script>
+  let adduserbtn = document.querySelector("#add_user");
+adduserbtn.addEventListener("submit", successMessageFunction);
+function successMessageFunction() {
+  alert("User created successfully");
+}
+</script>
 
 
 <!-- include footer -->

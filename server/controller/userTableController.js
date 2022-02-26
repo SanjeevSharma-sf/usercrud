@@ -10,6 +10,7 @@ exports.createUser = catchAsyncErrors(async (req, res, next) => {
     return;
   }
   const { name, email, gender, status } = req.body;
+  
   try {
     const user = await UserDetail.create({
       name,
